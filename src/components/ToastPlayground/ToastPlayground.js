@@ -12,7 +12,7 @@ const VARIANT_OPTIONS = ['notice', 'warning', 'success', 'error'];
 function ToastPlayground() {
   const [variant, setVariant] = React.useState(VARIANT_OPTIONS[0]);
   const [message, setMessage] = React.useState('');
-  const { toasts, createToast } = React.useContext(ToastContext)
+  const { toasts, createToast } = React.useContext(ToastContext);
 
   return (
       <div className={styles.wrapper}>
